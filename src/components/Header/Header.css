@@ -1,0 +1,38 @@
+
+/* Platforms container */
+.platforms {
+  gap: 2rem;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.nav-list{
+  background-color: #2596BE;
+  text-align: center;
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: space-between;
+}
+
+/* Navigation links */
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0px 20px;
+}
+
+/* Active navigation link */
+.nav_item .active {
+  color: #2596BE;
+  background: white;
+  border-radius: 2.5rem;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

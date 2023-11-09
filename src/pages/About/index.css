@@ -1,0 +1,10 @@
+.Aboutbanner {
+    background-image: url(../../assets/images/AboutBanner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-color {
+    color: #717171;
+  }
+  

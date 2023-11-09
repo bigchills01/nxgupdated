@@ -1,0 +1,314 @@
+
+
+*{
+  margin:0;
+  padding:0;
+}
+:root {
+  --heights: 100%;
+  --widths: 100%;
+}
+
+.slider-container {
+  height:100vh;
+  width: var(--widths);
+  padding:18px;
+  overflow: visible;
+  background-size:cover; 
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height:100vh;
+  width: var(--widths);
+  position: relative;
+
+
+}
+
+.slide-image {
+  position: absolute;
+  top:7rem;
+  right:8rem;
+  margin-left:7rem;
+
+}
+.content{
+  width:75%;
+  margin-top:3rem;
+  animation: slide-up 1s ease 0.5s;
+  animation-fill-mode:  forwards; 
+  opacity:0;
+  padding-top:1rem;
+  position:absolute;
+  left:2rem;
+}
+
+@keyframes slide-up {
+  0%{
+    visibility: hidden;
+    top: 6rem;
+    opacity:0;
+  }
+
+  100%{
+    visibility:visible;
+    top:2rem;
+    opacity:1;
+  }
+}
+.title{
+  font-size:64px;
+  font-weight:600;
+  color:  #46A6C8;
+
+}
+.text{
+  font-size:18px;
+  font-weight:400;
+  color:#717171;
+  width:70%;
+
+
+}
+.btn{
+  height:48px;
+  width:129px;
+  border-radius:6px;
+  color:white;
+  background-color: #46A6C8;
+
+}
+.Button-Container{
+  margin:17px;
+}
+
+
+.slide-text {
+  width: 100%;
+  color: grey;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  z-index: 10;
+  border:3px solid white ;
+}
+
+
+
+.prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,.slider-container:hover .next {
+  color: black
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 98%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: transparent;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider-container:hover .dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .active-dot {
+  background-color: rgba(255, 255, 255, 0.5);
+} */
+
+.slider-container:hover .dot{
+  background-color:#C9E5EF;
+}
+.slider-container:hover .active-dot{
+  background-color:#46A6C8;
+}
+
+.play-pause {
+  color: black;
+}
+@media only screen and (max-width:600px){
+.title{
+  font-size:28px;
+  text-align:center;
+  padding-right:3rem;
+} 
+
+.text{
+  font-size:13px;
+  width:100%;
+  text-align:center;
+  padding-right:3rem;
+  margin-right:1rem;
+
+}
+.slide-image{
+  top:rem;
+  height:24%;
+  width:48vw;
+}
+.content{
+ 
+  margin-top:18rem;
+  display:grid;
+  place-content:center;
+  right:rem;
+  padding-bottom:12px;
+  padding-left:12px;
+  padding-right:px;
+}
+.center-content{
+  display:grid;
+  place-items:center;
+}
+.btn{
+ height:40px;
+ width:110px;
+font-size:14px;
+}
+.all-dots {
+  
+  top: 800px;
+  right:30px;
+
+}
+.all-dots .dot{
+  height:10px;
+  width: 10px;
+} 
+@keyframes slide-up {
+  0%{
+    visibility: hidden;
+    top: 4rem;
+    opacity:0;
+  }
+
+  100%{
+    visibility:visible;
+    top:2rem;
+    opacity:1;
+  }
+}
+.slider-container{
+  background-size:cover;
+}
+
+}
+
+@media only screen and (max-width:768px){
+  .title{
+    left:3rem;
+    font-size:28px;
+    text-align:center;
+  } 
+  .text{
+    font-size:16px;
+    width:100%;
+    text-align:center;
+  
+  }
+  .btn{
+    height:40px;
+    width:110px;
+    font-size:14px;
+    }
+  .all-dots {
+    top: 108%;
+  right:0px;
+  }
+    .all-dots .dot{
+    height:10px;
+    width: 10px;
+  } 
+  .btn{
+  height:40px;
+  width:110px;
+  font-size:14px;
+  }
+  .slide-image{
+    top:0.5rem;
+    padding-bottom:20px;
+    height:43%;
+    width:50vw;
+    left:0.7rem;
+
+  }
+  .content{
+    margin-top:47%;
+    display:grid;
+    place-items:center;
+    width:98%;
+    padding-bottom:12px;
+    padding-left:10px;
+    padding-right:20px;
+    right:4rem;
+  }
+  .center-content{
+    display:grid;
+    place-items:center;
+  }
+  @keyframes slide-up {
+    0%{
+      visibility: hidden;
+      top: 4rem;
+      opacity:0;
+    }
+  
+    100%{
+      visibility:visible;
+      top:2rem;
+      opacity:1;
+    }
+  }
+  .slider-container{
+    background-size:cover;
+    padding-bottom:20px;
+  }
+  }

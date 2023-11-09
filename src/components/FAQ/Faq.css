@@ -1,0 +1,103 @@
+.custom-accordion {
+  padding: 8px;
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  width:600px;
+  background-color: white;
+  border: 1px solid #D9DCE2;
+  border-radius: 10px;
+  padding-left:10px;
+  
+
+}
+
+.custom-accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+
+.custom-accordion-title {
+  font-size: 16px;
+  line-height: 2.75rem;
+  font-weight: 600;
+  color: #717171;
+}
+
+.custom-accordion-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid #141F21;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.custom-accordion-icon.faq-open {
+  background-color: #2596BE;
+  color: white;
+  border: none;
+}
+
+.custom-accordion-content {
+  margin-top: 1rem;
+ 
+}
+.custom-accordion.open .custom-accordion-content {
+  width: 50%; /* Set width to 50% when open */
+}
+
+.custom-accordion-text {
+  font-size: 14px;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #717171;
+
+}
+.faqlist { 
+}
+@media screen and 
+(max-width: 768px) {
+
+  .custom-accordion {
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-right:7px;
+    padding-left:7rempx;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+    width:600px;
+    background-color: white;
+    border: 1px solid #D9DCE2;
+    border-radius: 20px;
+    
+  
+  }
+  .faqlist {
+    margin-left:12%;
+    width:70%;
+    height:30%; 
+  }
+  .custom-accordion-title {
+    font-size: 14px;
+    line-height: 2.75rem;
+    font-weight: 600;
+    color: #717171;
+  }
+  .custom-accordion-icon{
+    width:18px;
+    height:18px;
+  }
+}
+@media screen and 
+(max-width: 600px){
+  .faqlist {
+    margin-left:14%;
+    width:70%;
+    height:30%; 
+  }
+
+}

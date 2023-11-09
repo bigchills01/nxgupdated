@@ -1,0 +1,30 @@
+/* Overlay styles */
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/* Overlay styles ends */
+
+input::file-selector-button {
+  background-color: #a8d5e5;
+  color: #717171;
+  border: none;
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+input[type="file"] {
+  color: #717171;
+  text-transform: capitalize;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #89939e;
+}
